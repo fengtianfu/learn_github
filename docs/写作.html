@@ -76,6 +76,7 @@
 <li class="chapter" data-level="1.1" data-path="github是什么.html"><a href="github是什么.html"><i class="fa fa-check"></i><b>1.1</b> github是什么</a></li>
 <li class="chapter" data-level="1.2" data-path="日常我们有什么活动和github类似.html"><a href="日常我们有什么活动和github类似.html"><i class="fa fa-check"></i><b>1.2</b> 日常我们有什么活动和github类似</a></li>
 <li class="chapter" data-level="1.3" data-path="对照.html"><a href="对照.html"><i class="fa fa-check"></i><b>1.3</b> 对照</a></li>
+<li class="chapter" data-level="1.4" data-path="重复.html"><a href="重复.html"><i class="fa fa-check"></i><b>1.4</b> 重复</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="签约.html"><a href="签约.html"><i class="fa fa-check"></i><b>2</b> 签约</a>
 <ul>
@@ -107,20 +108,26 @@
 <h1 number="3"><span class="header-section-number">3</span> 写作</h1>
 <p>写作的大致应该有这样的过程</p>
 <ul>
-<li><p>写入文字
-这个没有什么好说的，就写吧, 这里的障碍，可能在于你使用的写作工具．</p></li>
+<li>写入文字
+根据自身情况，选择文字编辑器．相当与选择纸张和笔．写入文字后，使用add命令，让git软件跟踪这个文件，并把修改加进来准备提交给远程仓库．一定要把本地电脑的仓库，和github上的仓库做一个区分，这样才能理解为什么使用add命令．你写的文字在你本地的电脑上，通过一定的程序来决定那些文件提交，那些不提交．这和写作有相似之处，你写文章的过程，必然会选择那些文字保留，那些不保留．（git不会主动跟踪文件，需要你下命令，这样做的好处是，在思考不成熟的时候，可以写到一些git不跟踪的文件里面，这样最终成稿不会包含他们）．</li>
+</ul>
+<pre><code># 比如你写了一个叫index.html的文件，git跟踪文件变动命令
+git add index.html</code></pre>
+<ul>
 <li><p>修改</p>
-<p>文章千古事，写了文章，修改就是曲中之意．git会自动跟踪我们作出的修改．</p></li>
+<p>文章千古事，写了文章，修改就是曲中之意．只要前面使用add命令的文件，git会自动跟踪我们作出的修改．</p></li>
 </ul>
 <pre><code># 查询你的文章的状态（未修改，修改，确稿，定稿)
-git status</code></pre>
+git status
+# 确认修改和跟踪的命令是同一个
+git add </code></pre>
 <ul>
 <li><p>审稿</p>
 <p>审稿是和平时理解不太一样的地方．比如我们写的文章以章为单位，每章是一个文件．我们修改了很多处原稿，但是我们只想让其中的第二章确认修改，其他的修改我们想再斟酌一下，这个时候审稿就很有作用了．选择你需要的修改第二章确稿，没有确认的部分不会出现在你的github文章里面(在你的本地电脑里面，但是还没有确稿）．</p></li>
 </ul>
-<pre><code># 比如你之确认index.html的修改有效
+<pre><code># 比如你确认index.html的修改有效, 同前面一样的命令．
 git add index.html
-# 你可以确认全部修改有效
+# 你可以确认全部修改有效，同时也在这个时候，git开始跟踪你的文件变化
 git add .</code></pre>
 <ul>
 <li><p>定稿</p>
