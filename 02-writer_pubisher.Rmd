@@ -25,12 +25,16 @@ github会给你一个办公室，用来交稿. 这是一个互动的程序，你
 	- 在你的github仓库，点击clone or download，复制你的仓库网络地址．
 
 	- cd到你的文件夹
+
+
 	  ```
 	  # 比如你要去wang这个文件夹
 	  cd ~/wang/
 	  # 当然可以直接在图形窗口点击进去，就像windows一样
 	  ```
+
 	- git clone <仓库网络地址>
+
 	  ```
 	  # git clone 和你的github仓库取得联系
 	  # 你上面复制出来是什么网址，就用那一个
