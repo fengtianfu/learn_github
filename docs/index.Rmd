@@ -1,0 +1,30 @@
+
+
+---
+title: "学习github"
+author: "书囊无底"
+date: "`r Sys.Date()`"
+site: bookdown::bookdwon_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citatiohs: yes
+github-repo: fengtianfu/learn_github
+---
+
+# 序言 {-}
+
+为了记录学习github的过程，建立这本书．
+
+
+
+```{r include=FALSE}
+knitr::write_bib(c(
+		   .packages(), "bookdown", "knitr", "rmarkdown"
+		   ), "packages.bib"
+)
+```
+
+
+

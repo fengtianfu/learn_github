@@ -1,0 +1,10 @@
+
+book_filename: "学习github"
+language:
+        ui:
+                chapter_name: "章"
+delete_merged_file: true
+output_dir: "docs"
+
+
+
