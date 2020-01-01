@@ -9,6 +9,10 @@ bookdown::gitbook:
         <li><a href="https://github.com/fiengtianfu/learn_github" target="blank">Published with bookdown</a></li>
     edit: https://github.com/fengtianfu/learn_gihub/edit/master/%s
     download: ["pdf", "epub"]
+    toolbar:
+            position: fixed
+    fontsettings:
+            theme: Sepia
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
